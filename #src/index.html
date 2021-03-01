@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
-				
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="page__preview page-preview">
+				<div class='page-preview__container _container'>
+					<div class="page-preview__row">
+						<div class="page-preview__column">
+							<div class="page-preview__body body-page">
+								<div class="body-page__content">
+									<p class="body-page__title">
+										Imagine your <br>
+										home smart enough <span>to take care</span>
+										of itself.
+									</p>
+									<p class="body-page__text">
+										Turn your home into a smarthome today with a simple &
+										affordable upgrade. Discover the upgrade that automates
+										home maintenance.
+									</p>
+									<a href="#" class="body-page__link btn-green">Get Started</a>
+									<a href="#" class="body-page__link btn-w">Learn More</a>
+								</div>
+							</div>
+						</div>
+						<div class="page-preview__photo">
+							<div class="page-preview__image">
+								<img class="page-preview__image-big" src="img/block_01/01.png" alt="">
+								<img class="page-preview__image-min" src="img/block_01/02.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
 </html>
