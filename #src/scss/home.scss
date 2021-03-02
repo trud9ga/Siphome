@@ -37,7 +37,7 @@
 
 	&__row {
 		min-height: 100vh;
-
+		padding-top: 60px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -60,7 +60,7 @@
 	&__image-min {
 		position: absolute;
 		bottom: -200px;
-		right: -250px;
+		right: -20%;
 	}
 
 	&__body {
@@ -90,7 +90,6 @@
 	&__title {
 		max-width: 500px;
 		margin: 0px 0px 35px 0px;
-
 		font-weight: bold;
 		font-size: 55px;
 		line-height: 72px;
@@ -111,10 +110,11 @@
 			font-style: normal;
 			font-weight: bold;
 			font-size: 42px;
-			line-height: 140%;
+			line-height: 120%;
 			letter-spacing: -0.02em;
 			color: #ffffff;
 			margin: 0px 0px 18px 0px;
+			margin-top: 0px;
 		}
 	}
 
@@ -208,12 +208,12 @@
 			max-height: 457px;
 			// width: 100%;
 			height: 100%;
-
 			object-fit: cover;
 
 			@media (max-width: $md4+px) {
-				max-width: 320px;
-				max-height: 320px;
+				max-width: 290px;
+				max-height: 300px;
+				margin-right: 20px;
 			}
 		}
 	}
@@ -243,7 +243,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: -30px -5px;
-
 		@media (max-width: $md2+px) {
 			text-align: center;
 			margin: -18px -10px;
@@ -254,7 +253,9 @@
 		flex: 0 1 50%;
 
 		padding: 30px 5px;
-
+		svg{
+			margin: 0px 0px 35px 0px;
+		}
 		img {
 			margin: 0px 0px 35px 0px;
 		}
@@ -295,6 +296,7 @@
 
 //========================================================================================================================================================
 
+<<<<<<< HEAD
 .update-page {
 	position: relative;
 	&::before {
@@ -485,6 +487,9 @@
 		margin: 0px 0px 50px 0px;
 	}
 }
+=======
+
+>>>>>>> 58320987c1c470fc9ea568ca5e140c095895f6ed
 
 //========================================================================================================================================================
 
