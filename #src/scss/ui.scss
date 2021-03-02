@@ -222,12 +222,18 @@ body.ie {
 	.swiper-wrapper {
 		width: 100%;
 		height: 100%;
-		box-sizing: content-box;
-	
+       display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+		
+		@media (max-width:$md2+px){
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+		}
 	}
 	&.swiper-container-vertical {
 		.swiper-wrapper {
-	
+			
 		}
 	}
 	&.swiper-container-autoheight {
@@ -237,7 +243,13 @@ body.ie {
 }
 .swiper-container-initialized {
 	.swiper-slide {
-		flex-shrink: 0;
+		
+		@media (max-width:$md2+px){
+		flex: 0 0 50%;	
+		}
+		@media (max-width:$md3+px){
+			flex: 0 0 100%; 
+		}
 		// transition-property: transform;
 	}
 }

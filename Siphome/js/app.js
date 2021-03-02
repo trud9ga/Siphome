@@ -1427,7 +1427,7 @@ function scroll_animate(event) {
 	//disableScroll();
 }
 
-const { tree } = require("gulp");
+
 
 //BildSlider
 let sliders = document.querySelectorAll('._swiper');
@@ -1486,4 +1486,41 @@ if (sliderScrollItems.length > 0) {
 		sliderScroll.scrollbar.updateSize();
 	}
 }
+
+
+
+function sliders_bild_callback(params) { }
+
+
+
+let windowWidth = document.documentElement.clientWidth
+
+console.log(windowWidth)
+
+
+if (windowWidth < 992) {
+	let slider_about = new Swiper('.pluses__slider', {
+		autoHeight: false,
+		speed: 800,
+		slidesPerView: 1,
+		slidesPerColumn: 1,
+		lazy: true,
+		draggable: true,
+		watchOverflow: true,
+		breakpoints: {
+			480: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+				autoHeight: true,
+			},
+
+			992: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+		},
+	});
+}
+
+
 
