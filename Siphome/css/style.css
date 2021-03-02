@@ -704,23 +704,6 @@ body.ie ._ibg img {
   height: 100%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-._swiper.swiper-container-vertical .swiper-wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-._swiper.swiper-container-autoheight .swiper-wrapper {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .swiper-container-initialized .swiper-slide {
@@ -736,35 +719,6 @@ body.ie ._ibg img {
 
 .swiper-button-lock {
   display: none !important;
-}
-
-.slick-slider {
-  position: relative;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-slider .slick-list {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.slick-slider .slick-track {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.slick-slider .slick-slide {
-  position: relative;
 }
 
 .tab__item {
@@ -1455,6 +1409,46 @@ body.ie ._ibg img {
 .page__features {
   padding: 90px 0px 0px 0px;
   margin: 0px 0px 90px 0px;
+}
+
+.pluses-page {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-9.97%, rgba(255, 255, 255, 0)), to(#ECF0F7));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) -9.97%, #ECF0F7 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -9.97%, #ECF0F7 100%);
+}
+
+.pluses-page__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pluses-page__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  background: #ffffff;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 6px 48px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 48px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pluses-page__column p {
+  max-width: 185px;
+  margin-left: 30px;
 }
 
 .svg__text {

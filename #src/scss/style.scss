@@ -101,7 +101,8 @@ body {
 		padding: 90px 0px 0px 0px;
 		margin: 0px 0px 90px 0px;
 	}
-
+   &__pluses {
+	}
 	&__update {
 	}
 }
@@ -109,6 +110,54 @@ body {
 //===================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
+
+.pluses-page {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) -9.97%, #ECF0F7 100%);
+
+	// .pluses-page__container
+
+	&__container {
+	}
+
+	// .pluses-page__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	// .pluses-page__column
+
+	&__column {
+		flex: 0 0 30%;
+		background: #ffffff;
+		margin-bottom: 30px;
+		box-shadow: 0px 6px 48px rgba(0, 0, 0, 0.1);
+		border-radius: 16px;
+		padding:20px 24px ;
+		display: flex;
+		align-items: center;
+		p{
+			max-width: 185px;
+			margin-left:30px ;
+		}
+	}
+}
+
+.pluses {
+
+	// .pluses__slider
+
+	&__slider {
+	}
+}
+.swiper-slide {
+}
+
+
+
+//========================================================================================================================================================
 
 
 .svg__text{
