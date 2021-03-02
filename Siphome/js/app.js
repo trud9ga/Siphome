@@ -61,6 +61,7 @@ if (location.hash) {
 //=================
 //Menu
 let iconMenu = document.querySelector(".icon-menu");
+let overflow = document.querySelector(".overflow");
 if (iconMenu != null) {
 	let delay = 500;
 	let menuBody = document.querySelector(".menu__body");
@@ -69,9 +70,26 @@ if (iconMenu != null) {
 			body_lock(delay);
 			iconMenu.classList.toggle("_active");
 			menuBody.classList.toggle("_active");
+			overflow.classList.toggle("_active");
 		}
 	});
+
 };
+if (overflow != null) {
+	let delay = 500;
+	let menuBody = document.querySelector(".menu__body");
+	overflow.addEventListener("click", function (e) {
+		if (unlock) {
+			body_lock(delay);
+			iconMenu.classList.toggle("_active");
+			menuBody.classList.toggle("_active");
+			overflow.classList.toggle("_active");
+		}
+	});
+
+};
+
+
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
 	let menuBody = document.querySelector(".menu__body");

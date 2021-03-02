@@ -8,6 +8,35 @@
 	box-sizing: border-box;
 	border-radius: 3px;
 }
+
+._title {
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 140%;
+	letter-spacing: 0.6em;
+	text-transform: uppercase;
+
+	color: #1c57c9;
+
+	margin: 0px 0px 15px 0px;
+}
+
+._subtitle {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 140%;
+	letter-spacing: -0.02em;
+
+	color: #262b35;
+	margin: 0px 0px 25px 0px;
+
+	@media (max-width: $md2+px) {
+		text-align: center;
+	}
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
