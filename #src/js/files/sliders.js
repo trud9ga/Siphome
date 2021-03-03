@@ -60,6 +60,9 @@ if (sliderScrollItems.length > 0) {
 
 
 
+
+
+
 function sliders_bild_callback(params) { }
 
 
@@ -92,6 +95,75 @@ if (windowWidth < 992) {
 		},
 	});
 }
+
+
+let testimonialsSlider = new Swiper('.testimonials-page__row', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	*/
+	observer: true,
+	observeParents: true,
+	slidesPerView: 2,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 800,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	//loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	pagination: {
+		el: '.testimonials-page__pagination',
+		clickable: true,
+	},
+	// Arrows
+	navigation: {
+		nextEl: '.testimonials-page__arrow_next',
+		prevEl: '.testimonials-page__arrow_prev',
+	},
+	breakpoints: {
+		// 320: {
+		// 	slidesPerView: 1,
+		// 	spaceBetween: 0,
+		// 	autoHeight: true,
+		// },
+		// 479: {
+		// 	slidesPerView: 2,
+		// 	// spaceBetween: 20,
+		// },
+		// 768: {
+		// 	slidesPerView: 3,
+		// 	// spaceBetween: 50,
+		// },
+		// 992: {
+		// 	slidesPerView: 2,
+		// 	// spaceBetween: 20,
+		// },
+		// 1268: {
+		// 	slidesPerView: 4,
+		// 	spaceBetween: 30,
+		// },
+	},
+	// on: {
+	// 	lazyImageReady: function () {
+	// 		ibg();
+	// 	},
+	// }
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
+
+
+
+
 
 
 

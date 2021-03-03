@@ -105,7 +105,6 @@
 		@media (max-width: $md2+px) {
 			max-width: 100%;
 		}
-
 		@media (max-width: $md4+px) {
 			font-style: normal;
 			font-weight: bold;
@@ -253,7 +252,7 @@
 		flex: 0 1 50%;
 
 		padding: 30px 5px;
-		svg{
+		svg {
 			margin: 0px 0px 35px 0px;
 		}
 		img {
@@ -296,6 +295,384 @@
 
 //========================================================================================================================================================
 
+.services-page {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) -9.97%, #ecf0f7 100%);
+	&__container {
+		text-align: center;
+	}
 
+	&__title {
+	}
+
+	&__subtitle {
+	}
+
+	&__text {
+		margin: 0px 0px 260px 0px;
+
+		@media (max-width: $md3+px) {
+			margin: 0 0 190px 0;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0 0 140px 0;
+		}
+	}
+
+	&__home {
+		display: inline-block;
+		position: relative;
+
+		&::before {
+			content: url(../img/block_04/02.svg);
+
+			object-fit: cover;
+			z-index: 5;
+			position: absolute;
+			top: 40%;
+			left: 35%;
+
+			@media (max-width: $md4+px) {
+				display: none;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+
+			background: #1ece7a;
+			z-index: 4;
+			width: 93px;
+			height: 93px;
+
+			top: 35%;
+			left: 31%;
+
+			@media (max-width: $md3+px) {
+				width: 85px;
+				height: 85px;
+			}
+
+			@media (max-width: $md4+px) {
+				display: none;
+			}
+		}
+	}
+
+	&__image {
+		img {
+			height: 260px;
+			position: relative;
+			z-index: 2;
+
+			@media (max-width: $md3+px) {
+				height: 210px;
+				width: 280px;
+			}
+
+			@media (max-width: $md4+px) {
+				width: 170px;
+				height: 124px;
+				transform: translate(10px, 0px);
+			}
+		}
+	}
+
+	&__circle {
+	}
+
+	&__items {
+	}
+
+	&__item {
+		position: absolute;
+		span {
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 140%;
+			background: #ffffff;
+
+			text-align: center;
+			text-transform: uppercase;
+			color: #1ece7a;
+
+			padding: 10px 11px;
+			border: 1px solid #1ece7a;
+			border-radius: 100px;
+
+			@media (max-width: $md3+px) {
+				font-size: 10px;
+				padding: 8px 10px;
+			}
+
+			@media (max-width: $md4+px) {
+				font-size: 10px;
+				padding: 5px 10px;
+			}
+		}
+		&:nth-child(1) {
+			top: -50px;
+			left: 40px;
+
+			@media (max-width: $md3+px) {
+				top: -65px;
+				left: 40px;
+			}
+
+			@media (max-width: $md4+px) {
+				top: -25px;
+				left: -15px;
+			}
+		}
+		&:nth-child(2) {
+			top: 50%;
+			left: -50%;
+
+			@media (max-width: $md3+px) {
+				top: 50%;
+				left: -50%;
+			}
+		}
+		&:nth-child(3) {
+			top: 0;
+			right: -30px;
+
+			@media (max-width: $md4+px) {
+				top: 0;
+				right: -60px;
+			}
+		}
+		&:nth-child(4) {
+			bottom: 0;
+			right: -100px;
+		}
+		&:nth-child(5) {
+			top: -90px;
+			right: -100px;
+
+			@media (max-width: $md3+px) {
+				top: -90px;
+				right: -45px;
+			}
+
+			@media (max-width: $md4+px) {
+				top: -75px;
+				right: -15px;
+			}
+		}
+		&:nth-child(6) {
+			bottom: -80px;
+			left: 20px;
+
+			@media (max-width: $md3+px) {
+				bottom: -80px;
+				left: 100px;
+			}
+
+			@media (max-width: $md4+px) {
+				bottom: -80px;
+				left: -30px;
+			}
+		}
+		&:nth-child(7) {
+			bottom: -160px;
+
+			@media (max-width: $md3+px) {
+				bottom: -100px;
+			}
+
+			@media (max-width: $md4+px) {
+				bottom: -35px;
+			}
+		}
+	}
+}
+
+.circle-services {
+	&__one {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid #1ece7a;
+			border-radius: 50%;
+			width: 300px;
+			height: 300px;
+			transform: translate(25px, -10px);
+
+			@media (max-width: $md3+px) {
+				width: 240px;
+				height: 240px;
+				transform: translate(10px, -10px);
+			}
+
+			@media (max-width: $md4+px) {
+				width: 143px;
+				height: 143px;
+
+				transform: translate(18px, -5px);
+			}
+		}
+	}
+
+	&__two {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid #1ece7a;
+			border-radius: 50%;
+			width: 400px;
+			height: 400px;
+			transform: translate(-5%, -15%);
+
+			@media (max-width: $md3+px) {
+				width: 350px;
+				height: 350px;
+				transform: translate(-13%, -20%);
+			}
+
+			@media (max-width: $md4+px) {
+				width: 190px;
+				height: 190px;
+
+				transform: translate(-3%, -15%);
+			}
+		}
+	}
+
+	&__tree {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid #1ece7a;
+			border-radius: 50%;
+			width: 600px;
+			height: 600px;
+			transform: translate(-20%, -27%);
+
+			@media (max-width: $md3+px) {
+				width: 450px;
+				height: 450px;
+			}
+
+			@media (max-width: $md4+px) {
+				width: 286px;
+				height: 286px;
+			}
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+.testimonials-page {
+	&__container {
+		position: relative;
+	}
+
+	&__title {
+	}
+
+	&__subtitle {
+		text-align: center;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+
+		min-width: 0;
+		margin: 0px -30px;
+	}
+
+	&__column {
+		position: relative;
+
+		padding: 50px 30px;
+	}
+
+	&__arrows {
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 55%;
+		&_prev {
+			left: -20px;
+		}
+
+		&_next {
+			right: -20px;
+			transform: rotate(180deg);
+		}
+	}
+
+	&__pagination {
+		position: absolute;
+		width: 100%;
+
+		display: flex;
+		justify-content: center;
+
+		bottom: 0;
+		left: 0;
+	}
+
+	&__image {
+		width: 74px;
+		height: 74px;
+
+		max-width: 100%;
+		max-height: 100%;
+
+		object-fit: cover;
+
+		position: absolute;
+		top: 10px;
+		right: 15px;
+	}
+
+	&__body {
+		padding: 30px 80px 30px 30px;
+		background: #ffffff;
+		box-shadow: 0px 20px 48px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+	}
+
+	&__comment {
+		width: 420px;
+
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 160%;
+		color: #262b35;
+
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__author {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+
+		color: #262b35;
+
+		margin: 0px 0px 10px 0px;
+	}
+
+	&__profession {
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 160%;
+
+		color: #606c84;
+	}
+}
 
 //====================================================================================================
